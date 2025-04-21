@@ -4,7 +4,7 @@
         <acls/>
         <active>false</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1283000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=3327000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>27000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>needit_fulfillment</internal_name>
-        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛NeedIt Record","reference":"x_58872_needit_needit","reference_display":"NeedIt","type":"reference","base_type":"reference","usedInstances":{"638586f5-e8d1-4bee-bfd9-b38cc4e89131":["record"]},"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"603c583e-7b4f-40d0-9379-e63e1e1dd7da.record","label":"1 - Update Record➛NeedIt Record","reference":"x_58872_needit_needit","reference_display":"NeedIt","type":"reference","base_type":"reference","usedInstances":{"3f23e95e-a869-4ee0-86a5-234f09fee61e":["record"],"55851039-69f9-4825-8877-409231a586db":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current","label":"Trigger - Record Created➛NeedIt Record","reference":"x_58872_needit_needit","reference_display":"NeedIt","type":"reference","base_type":"reference","usedInstances":{"638586f5-e8d1-4bee-bfd9-b38cc4e89131":["record"],"603c583e-7b4f-40d0-9379-e63e1e1dd7da":["record"],"2cb333b5-daa7-41b0-9b1e-610b14494610":["record"]},"attributes":{}},{"name":"Created_1.current.u_requested_for.manager","label":"Trigger - Record Created➛NeedIt Record➛Requested for➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager","usedInstances":{"2cb333b5-daa7-41b0-9b1e-610b14494610":["approval_conditions"]}},{"name":"2cb333b5-daa7-41b0-9b1e-610b14494610.approval_state","label":"2 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"3840c7b9-58dd-47ad-92fb-1e5cd1e3a09a":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
         <master_snapshot>2b27e711c30d66102c0b5312b40131fa</master_snapshot>
         <master_snapshot_digest/>
         <name>NeedIt Fulfillment</name>
@@ -28,7 +28,7 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>published</status>
+        <status>draft</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>82426f59c3c966102c0b5312b4013150</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>NeedIt Fulfillment</sys_name>
         <sys_overrides/>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_hub_flow_82426f59c3c966102c0b5312b4013150</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-04-21 04:02:32</sys_updated_on>
+        <sys_updated_on>2025-04-21 05:22:30</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -84,14 +84,14 @@
         <identifier>82426f59c3c966102c0b5312b4013150</identifier>
         <runner>FDTriggerRunner</runner>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-04-21 03:55:14</sys_created_on>
-        <sys_id>bf272b11c30d66102c0b5312b401313e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_created_on>2025-04-21 04:29:18</sys_created_on>
+        <sys_id>f6fe6fd9c30d66102c0b5312b40131e2</sys_id>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-04-21 04:02:32</sys_updated_on>
+        <sys_updated_on>2025-04-21 04:30:16</sys_updated_on>
         <trigger display_value="">73272b11c30d66102c0b5312b401313e</trigger>
     </sys_trigger_runner_mapping>
-    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=82426f59c3c966102c0b5312b4013150^sys_idNOT INbf272b11c30d66102c0b5312b401313e"/>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=82426f59c3c966102c0b5312b4013150^sys_idNOT INf6fe6fd9c30d66102c0b5312b40131e2"/>
     <sys_hub_flow_stage action="delete_multiple" query="flow=82426f59c3c966102c0b5312b4013150"/>
     <sys_flow_cat_variable_model action="delete_multiple" query="id=82426f59c3c966102c0b5312b4013150^sys_idNOT IN0a426f59c3c966102c0b5312b4013153"/>
     <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
@@ -297,9 +297,149 @@
         <trigger_outputs/>
         <trigger_type>record_create</trigger_type>
     </sys_hub_trigger_instance_v2>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=82426f59c3c966102c0b5312b4013150"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=82426f59c3c966102c0b5312b4013150^sys_idNOT IN00117b9dc30d66102c0b5312b401319d,16b37391c34d66102c0b5312b4013110,862b37d9c34d66102c0b5312b40131ba,a7dd6799c30d66102c0b5312b40131dc"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment>Get approval from Requested for's Manager</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="NeedIt Fulfillment">82426f59c3c966102c0b5312b4013150</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-21 04:38:24</sys_created_on>
+        <sys_id>00117b9dc30d66102c0b5312b401319d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-21 04:47:13</sys_updated_on>
+        <ui_id>2cb333b5-daa7-41b0-9b1e-610b14494610</ui_id>
+        <values>H4sIAAAAAAAA/+1Y32/iOBD+V6o8U84hJATeqqsq9XS3K7XdfSlVZOwJeGWcbOx0yyH+9xsnDqTQZlGPU29X+wLy2DPzzcw3/pH7tSe4N/FGcTqA8XhAZj4hASFxyEgcwCwYRaOAMuL1PEWXgCsLYFnBcfxIZWkF6/XvBVADPPH7rCwKUGazwXkudC7p6rNbhhK2EJLjvDe5f+h5OS3QooHCm6z3pswqh0TSGUhUvMxYuUSjZ9eXaONYtI32TQN3H771gWPurCfCCnHK4iE9D54MKA7oLaVSQ89bUsWpyYqVNzFFiQIMmn9UcrVdsRDK1IEu6ZMWf6P5YGDXpYCRMZeE7TBxCWpykwkGH3MjMlVLDJ3JJnGZLJfqQx2BTS2ktJSmldpSoz3ILWQLokaY3i6ybzeNvyuhquAcWpkxKrcjakwhZqUBbasBEqqcLGmeCzVP8iJ7FJUyQln25xIH/VRm39CnFnPVp8zi7mOCaP8K5ZeV+DMthA3iLzSDypsq+ORraf3WYTjASRVzHTCu0qwQublAm4/gEG56jqgz1ll6tqt0bW7H06ckjOPRIFEAXBj3d8jTDyi/Nm9m6531elaVqnc04mfKhxE4qlbDRNWmHVP9bqY6yTFUjcn7UNUh+sG4+j2awjAKQvwZpQHxBz6JIYpjNiaUxVEUDoNdkdEfIqYywSJptL0j7An30FvMmJo3jDwCXKN44dCd3TToXoXtWKobV46hg5Mx1I9+UIqW4m4vN7Xkz/3q/Ddctu4+KfG1hGtb/Wgwi8Yk5uc8JbPzYRyE55QBOYfIDyHkEQv94F/zn/hdmx6PXyBSKkC27xXNxGEbtGbe1g5X1tWzTfoIvActceUAvxaIa4hquLdtn64pYkLeqSt+3jsG6yQDtDbvL1lZqA7uJguhq5K+yuHWilNx+Qj4jfIfNf59Ku+H1cHk4BeT/8dMHoadVIAXdi+WKbwXIz7d4nO954G+gS/AjL5Qq0/3L7z7+iVeB/Cc0VaaZkUfmUDnUGw2D4cdcBKbb+uZ3a2mlKCbvjkiWdtXpdPrTJ7rmt1NySm5zhme6pH5fo3zc97dWScP0vGu7rzEdCBd219Dpl4NcupNpp7KFEy93tSzqxJLiEqMKxDcdqKSrdebTS0pC+oM+K3hTpvTla5WarYAjqSqpM8kNdOd/JQfY26dg7NLxP3bnWidOt/P2vaLTlnrv5jI5hnRRFJnTrTPnPBkZ87wV+PsPRSS7eUajxjcgt7cTQ//ACN/pyxbFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Update NeedIt State to Approved</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="NeedIt Fulfillment">82426f59c3c966102c0b5312b4013150</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>3840c7b9-58dd-47ad-92fb-1e5cd1e3a09a</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-21 04:50:01</sys_created_on>
+        <sys_id>16b37391c34d66102c0b5312b4013110</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-21 04:50:01</sys_updated_on>
+        <ui_id>3f23e95e-a869-4ee0-86a5-234f09fee61e</ui_id>
+        <values>H4sIAAAAAAAA/+1UW2vbMBT+K8XPjpHi3N8GIdCHpdCNvnTFyNJxIpBlT5bTZCH/fUe2nKbp1oUSGIP5xehI57scfehxH0gRzIIBCEKndMRjGsd9QvqTAU1HcUr7ImYANAgDzXLAkwZ4YQSuN0zVrrDfj0jMh5MYeuN0kPUGRJDeNB5PezCKgQIVYixY1PYdDtgpZFUqtnvwAFjha6mEAR3MHp/CoGQGuSyYYLY/27K7EhLFUlDYOC94nYO2N7dzxLjUR9d93xk5N+Y4cC08eiJdEbecHkrCALYWtACky5iqIAxypgWzhdkFM2tqLBhg4k6r3fHEWmrbOs3ZtpI/EH9A3LkM0Br3UzguEz+hbjiF5HBXWlnotmJZqrrJFarO9bK14GYLGauVPZltXSEelE6yE9EqzL6si+f7jm8hdePOq1UFZ+q4YtYamdYWKncdoKAZSs7KUupVUppiI5tmlJJHK4WLKFPFM3JWcqUjxp3uCAfEogXW5035gRnpTHxGGGw+NOaT77XjbW14wUnjuTGcNBeFRytuZGk/IfAGvMxD6IOcDt8LAJ++3PcJ5kuYt8lwMhn3Ew0gpPW/t5FdYv3Wfji4Xx31zbKlvlT2q+bf2PDRfVXzyR1eLbmTv5Rcr+gfi+6fAkv6775YJzfdZLQ6CWtlmYVvNSGxoMO3IT3f/mBWIUdQCzctbHix6g5gIUGJ6hc2urB6gmTjCY5P7dUSS0ek+f6/uFd8cZ9+AsQknLA8CAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Update NeedIt State to Closed Complete</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="NeedIt Fulfillment">82426f59c3c966102c0b5312b4013150</flow>
+        <generation_source/>
+        <order>6</order>
+        <parent_ui_id>139d4d63-e9c4-4a00-917e-7f9787a22a2d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-21 05:22:30</sys_created_on>
+        <sys_id>862b37d9c34d66102c0b5312b40131ba</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-21 05:22:30</sys_updated_on>
+        <ui_id>55851039-69f9-4825-8877-409231a586db</ui_id>
+        <values>H4sIAAAAAAAA/+1UW2vbMBT+K0XPjpGj3N8GIdCHpdCNvnTFyNZxIpBlT5bTZCH/fUe2nKbp1oUSGIP5xehI57scfehxT6QgMzIAQaNpNEpZxFif0v5kECUjlkR9wThARAKieQ540kBaGIHrDVe1K+z3I8rS4YRBb5wMst6ACtqbsvG0ByMGEURCjAUP277DATuFrErFdw8eACvpWiphQJPZ41NASm6Qy4Ihs/3Zlt2VECuegMLGeZHWOWh7cztHjEt9dN33nZFzY44D18Kjx9IVccvpiWhAYGtBC0C6jKsKApJzLbgtzI7MrKmxYICLO612xxNrqW3rNOfbSv5A/AF15zJAa6mfwnEZ+wl1wylkCnellYVuK5YnqptcoepcL1sLbraQ8VrZk9nWFeJB6SQ7Ea3C7Mu6eL7v+BZSN+68WlWkXB1X3Fojk9pC5a4DFDRDyXlZSr2KS1NsZNOMUvJwpXARZqp4Rs5KrnTIU6c7xAHxcIH1eVN+4EY6E58RBpsPjfn4e+14WxtecNx4bgzHzUXh0So1srSfEHgDXuYh8EFOhu8FIJ2+3PcJ5kuYt/FwMhn3Yw0gpPW/t5FdYv3Wfji4Xx31zbKlvlT2q+bf2PDRfVXzyR1eLbmTv5Rcr+gfi+6fAkv7775YJzfdZLQ6CWtluYVvNaVMsLcZPdv9YFIhR0wLNy1qcLHmDmAhQYnqFya6qHqCeOMJjg/t1fIajWjz/X9vr/jePv0EoRZFEzoIAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment>Set State to Awaiting Approval</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="NeedIt Fulfillment">82426f59c3c966102c0b5312b4013150</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-21 04:24:27</sys_created_on>
+        <sys_id>a7dd6799c30d66102c0b5312b40131dc</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-21 04:47:13</sys_updated_on>
+        <ui_id>603c583e-7b4f-40d0-9379-e63e1e1dd7da</ui_id>
+        <values>H4sIAAAAAAAA/+1U32vbMBD+V4KejfGPJEvzNhYCfVgK3ehLV4QsnROBLHuynCYL+d93suU0Tbc2lEAZzC9Gd6fvvu/0cfc7IgWZkiGIKL6KxzyN0zSJomQyjLNxmsWJSBlATAKiWQFYaYCXRuB5zVTjArvdFwPMgqBxyBtjQNv9HvNC1pVi2ztfhhG+kkpgnkzvHwJSMYOIFgyZ7k5SdlsBVSwDhRdnJW8KBB1czxDjXLb97due7il91wPPwqNT6YKYcnziKCCwsaAFYLucqRoCUjAtmC3NlkytaTCAqsWNVttDxUpq2ykt2KaWvxB/GLm6HFAa91M4HKmfUD+cUnK4qawsdRexLFP95ErVFHrRSXCzhZw1yh7NtqkRDypH2ZHoGObfVuXjbd9vLnWrzrNVJWfqcGLWGpk1Fmr3HKCgHUrBqkrqJa1MuZbtZaRShEuFhzBX5SP2rOVSh4w73iEOiIVzjM/a8B0z0on4ijB4ed+Kpz8b17eT4QnTVnMrmLYPhaU1N7KynxF4DZ7mPvB2zUavGYBfPb33EeaTZTd0NJl8SqgGENL630vLLjB+bd9t3O+u9WDRtT6X9rPLf5Hhrfss5p07uphzJx/kXM/oH7PuW4aNklc31tFLtx6tj8xaW1yuP5ooSkU8fGnS0/Q7vQoFgloYdLDB2ax7gLkEJeo/yOjN6hvQtW9wWLUXc2w8jtrv/8a94MZ9+A1MSptQIggAAA==</values>
+    </sys_hub_action_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=82426f59c3c966102c0b5312b4013150"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=82426f59c3c966102c0b5312b4013150"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=82426f59c3c966102c0b5312b4013150^sys_idNOT IN3873fb51c34d66102c0b5312b40131c4,8e2b37d9c34d66102c0b5312b40131b9"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3c73fb51c34d66102c0b5312b40131c3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="NeedIt Fulfillment">82426f59c3c966102c0b5312b4013150</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-21 04:48:49</sys_created_on>
+        <sys_id>3873fb51c34d66102c0b5312b40131c4</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-21 05:22:30</sys_updated_on>
+        <ui_id>3840c7b9-58dd-47ad-92fb-1e5cd1e3a09a</ui_id>
+        <values>H4sIAAAAAAAA/+1UTW/bMAz9K4XPjiHbSbbkVmwoMGBbgbboZSsMWqITYbLkSnLaLMh/H+WPNOgSbBh63M16pMj3qEfvItP6pvXuzlw6J1c6Wn57iCOpA0bfu0hDjdEy4kYL6aXRRQfE0QZUGwI3+Nii8xfQNNZsUFBISNco2N6fz+BrqYTFoVsDlmp6tNFy9yrktw0WCkpUVOjWW6lXdF0KOlUMqnTBU55n8zxjLHs/Tct5XqaZyAEhp7zx4oeR/MXnDonPqgr9CHdjJ2NFoJWyOMJnj1oQ/WUFymEc1aAFeGO3B8QiiGutXoC11J7KRSH52cmfVDubzUJihaSRYx88HIthdD3M10ZyvG4CwR7xUKrhDjeqrfXXXkcYOlbQKj8OnZDWUT1sAunAYqBU3a7N083Y8ErqTuAQVIaDOpzA0xjK1qMLD4MKaypU1PSONJwiPKbsLhOXOlkpOiSVMk/UNDgpAR6IJzQjSK4I/9jB92BlUPGFytDlnmYJTvKicx2V85Yk7LuxFI9tINQLHKQU/TQowXErG39JfTY4sN7Hv1v2yK27XcbLPM/L2UQAvJuQZdhkUaY4maesTKfTxZQ+kt6qoArnweN+/71lLBfnLf5WZd9iLxYwq2Ypm53ei+n81F6c2Ijzy5D9YRnC8/3lLjDG/i/D8TJIV/SmHrR1zf95Fx6C8fsOrveNQC4dEbkL2KfxLx8CWzKA5MfQk7E/goQXbP8LiBD8mC8GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">c62b37d9c34d66102c0b5312b40131b9</block>
+        <comment/>
+        <connected_to>3840c7b9-58dd-47ad-92fb-1e5cd1e3a09a</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="NeedIt Fulfillment">82426f59c3c966102c0b5312b4013150</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-21 05:22:30</sys_created_on>
+        <sys_id>8e2b37d9c34d66102c0b5312b40131b9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-21 05:22:30</sys_updated_on>
+        <ui_id>139d4d63-e9c4-4a00-917e-7f9787a22a2d</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=82426f59c3c966102c0b5312b4013150"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=82426f59c3c966102c0b5312b4013150"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -364,7 +504,7 @@
         <description>Steps to approve and fulfill NeedIt requests.</description>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>needit_fulfillment</internal_name>
-        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛NeedIt Record","reference":"x_58872_needit_needit","reference_display":"NeedIt","type":"reference","base_type":"reference","usedInstances":{"638586f5-e8d1-4bee-bfd9-b38cc4e89131":["record"]},"attributes":{}}]</label_cache>
+        <label_cache>[{"name":"Created_1.current","label":"Trigger - Record Created➛NeedIt Record","reference":"x_58872_needit_needit","reference_display":"NeedIt","type":"reference","base_type":"reference","usedInstances":{"638586f5-e8d1-4bee-bfd9-b38cc4e89131":["record"],"603c583e-7b4f-40d0-9379-e63e1e1dd7da":["record"]},"attributes":{}}]</label_cache>
         <master>true</master>
         <name>NeedIt Fulfillment</name>
         <natlang/>
@@ -381,7 +521,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>2b27e711c30d66102c0b5312b40131fa</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -389,7 +529,7 @@
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-04-21 03:55:13</sys_updated_on>
+        <sys_updated_on>2025-04-21 04:29:18</sys_updated_on>
         <type>flow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -414,7 +554,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -473,14 +613,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-04-21 03:55:13</sys_created_on>
         <sys_id>2327e711c30d66102c0b5312b40131fc</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-04-21 03:55:13</sys_updated_on>
+        <sys_updated_on>2025-04-21 04:29:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -498,7 +638,7 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -557,14 +697,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-04-21 03:55:13</sys_created_on>
         <sys_id>2b272b11c30d66102c0b5312b4013106</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-04-21 03:55:13</sys_updated_on>
+        <sys_updated_on>2025-04-21 04:29:17</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -600,7 +740,7 @@
         <trigger_outputs/>
         <trigger_type>record_create</trigger_type>
     </sys_hub_trigger_instance_v2>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2b27e711c30d66102c0b5312b40131fa^sys_idNOT INef272b11c30d66102c0b5312b4013111"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=2b27e711c30d66102c0b5312b40131fa^sys_idNOT IN9afe6fd9c30d66102c0b5312b40131bb,d6fe6fd9c30d66102c0b5312b40131bc"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
         <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
@@ -614,14 +754,36 @@
         <parent_ui_id/>
         <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-04-21 03:55:14</sys_created_on>
-        <sys_id>ef272b11c30d66102c0b5312b4013111</sys_id>
+        <sys_created_on>2025-04-21 04:29:17</sys_created_on>
+        <sys_id>9afe6fd9c30d66102c0b5312b40131bb</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-04-21 03:55:14</sys_updated_on>
-        <ui_id>638586f5-e8d1-4bee-bfd9-b38cc4e89131</ui_id>
+        <sys_updated_on>2025-04-21 04:29:17</sys_updated_on>
+        <ui_id>603c583e-7b4f-40d0-9379-e63e1e1dd7da</ui_id>
         <values>H4sIAAAAAAAA/+VVTW/iMBD9K8jnCCUkZIFbF1SpUreV2lUvpRsZe1IsOU7WdtqyiP++E8cBRFGXSr2g5RA0n35v/DJ5XBPByYQkwMNoHKUsjuJ4EIaDURIt0ngRDXhMASISEEULwEwNrNQc7Rcq68axXk81UAs8i/qs1hqU3WwwzoWpJF09+DT0sKWQHONk8vgUkIpq7GhBk8n6IHQqJEkXIDH1rsN0iNGuqsbmJasLxJWJznntK2c+0ruaYQSLGjhRGBB4s6A4IJCcSgMBKaji1JZ6RSZW1+hA0vxWydU2YymUbYkW9M2IP3hyEjZ5OSAz5oewNTM/oNadz6il99iZ2Vpv51UKBqadCYec1tJO931twm1lRanaEksXsqsuZV2om3YiZNtg7z5qgyCgang2yFta+f2yfL3rQF4K5UbiKcqSUbm1qLVaLGrbwFkTkOBmXNCqEuo5q3T5IlwxQin6zxKNfi7LVzzTiGfVp6zB3cep0v4l+mfO/UC1aEj8wDZYvAmIWZmppMbsqOAMs991g6Ql5ilkbgpuBJlTQlPMtKjsBR71Ah74JvCiXww/Uhgb7wS113Mn/LdsOBp9G2QKgAvr/94L/wb9V/bT8j8BXCf/n+7Sj4P1b8A73/V+be+mDXj9D79M/6Nz0r+ncfYvwL9kHw4+XKx7SnJKN3uSNxYX/bwOw5hHyS+EhHhx8duy9a3nnfjnZDIn38EuexcKias5CeZtFxdJUp4kdBDTcQ7ReBSFIR6OT8boKEzT1KW7u3TpOIAML0s7d2MIfmKbIx+is+Twud1xwg13u+NSgOTmyJV3iwMKnIWFrJXAwfLwwd6DD24/oF+2QaI0dL8z2iP/zXf06S+A070vPgoAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="NeedIt Fulfillment">2b27e711c30d66102c0b5312b40131fa</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-04-21 04:29:17</sys_created_on>
+        <sys_id>d6fe6fd9c30d66102c0b5312b40131bc</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-04-21 04:29:17</sys_updated_on>
+        <ui_id>0c37bc78-f099-4d30-8f38-99291fc08c8e</ui_id>
+        <values>H4sIAAAAAAAA/+VU0W7aMBT9FeRnQASadeVtglWaBK00pu6hrSLHuQmWHDuzHShD/PuuEydkFE0g9W1SXu7xcXzO9bl+3hOekCkJYxbEjH0KJ8FoNMEvToPkLhjdAQs/3ya3pE8kzQGZQmWRgA0IhDZUlA7jMlVYJtwUgu6ePPqtRtmai0SDJNPn1z4pqMb/WNBkuj9ZulSIoDGePiULr+KMMLsrHMTWijPw9cJvmzWg0omTMeoTeLMgE8DzUyoM9ElOZUKt0rsW0UCTRymOwJpLi38jjvxm+G8872bkeCmgIwb1WltGvjk1nM6ppSurS2ZL7am1WIO92LcWB4Peg5LQGww63e5IP/SPXN/ukzvxzKDL/Em15DLrkLeIHMnjLvmr1kp3qOBrz50c8OYSSGkp7Ox6B8HFDsbXOJhc4eDGOaib/1hYrjCNJHCZobForkaJMpcPdc5I6/fpJP41Oj87BaXBCEDhYuZy40OUrtZq+73JyD2XlSK/KBSjoq2otZrHpXX93RMQkOOPopwWBTYiKrTa8Gozis2HmcBimAq1xUMNz+SQMmdtiKmmw3vE5xX8RDV3Npf4G9x86BOzMzNBjTmaxQhHv0qnpLbuPURVo6otTPPCfsEDNuDluvZX4zye/GucIfx7fHMwhmbQuasfYGxvobLesl56ke/fmbOc616dC2Q2aVq2Gs8K9y+Pwcuq8tl9eVYN2IT/w16ecRh+zNNzbpjfj8dV0/H/hf/1D4j9cdxWBwAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=2b27e711c30d66102c0b5312b40131fa"/>
     <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=2b27e711c30d66102c0b5312b40131fa"/>
@@ -685,17 +847,17 @@
         <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"bf272b11c30d66102c0b5312b401313f","name":"plan","plan_signature":null}}</plan>
         <plan_id>82426f59c3c966102c0b5312b4013150</plan_id>
-        <snapshot>a6586791c30d66102c0b5312b40131c1</snapshot>
+        <snapshot>a71f231dc30d66102c0b5312b40131f7</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-04-21 03:55:14</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bf272b11c30d66102c0b5312b401313f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-04-21 03:55:14</sys_updated_on>
+        <sys_updated_on>2025-04-21 04:29:18</sys_updated_on>
         <trigger display_value="">73272b11c30d66102c0b5312b401313e</trigger>
     </sys_flow_trigger_plan>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=82426f59c3c966102c0b5312b4013150"/>
