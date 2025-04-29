@@ -47,7 +47,7 @@
         <end_time/>
         <exp_report_attrs>true</exp_report_attrs>
         <field>u_request_type</field>
-        <field_list>number,priority,state,assigned_to,short_description,sys_class_name</field_list>
+        <field_list>number,priority,state,assigned_to,short_description,sys_class_name,u_request_type,u_requested_for</field_list>
         <filter/>
         <formatting_configuration>{"table":"incident","stringFormattingProperties":{},"durationFormattingProperties":{},"dateFormattingProperties":{},"numberFormattingProperties":{}}</formatting_configuration>
         <from/>
@@ -55,7 +55,7 @@
         <gauge_autoscale>true</gauge_autoscale>
         <group/>
         <import_table/>
-        <interval>year</interval>
+        <interval>month</interval>
         <is_published>false</is_published>
         <is_real_time>false</is_real_time>
         <is_scheduled>false</is_scheduled>
@@ -78,7 +78,7 @@
         <others>true</others>
         <page_hdrftr/>
         <pivot_expanded>true</pivot_expanded>
-        <report_drilldown display_value="Monthly Active Requests by Requested for">4c4ca4cac3492a102c0b5312b40131c1</report_drilldown>
+        <report_drilldown display_value="Monthly Active Requests by Requested for">19457f04c395e2102c0b5312b40131eb</report_drilldown>
         <report_source display_value="Active NeedIt Requests (NeedIt)">c43fc882c3c52a102c0b5312b40131f2</report_source>
         <roles/>
         <row/>
@@ -90,7 +90,7 @@
         <series_name_text/>
         <set_color>color_palette</set_color>
         <show_chart_border>false</show_chart_border>
-        <show_chart_data_label>true</show_chart_data_label>
+        <show_chart_data_label>false</show_chart_data_label>
         <show_chart_title>report</show_chart_title>
         <show_chart_total>true</show_chart_total>
         <show_data_label_position_middle>false</show_data_label_position_middle>
@@ -108,20 +108,20 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-04-22 22:13:58</sys_created_on>
         <sys_id>884ca4cac3492a102c0b5312b40131ba</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>Active NeedIt Requests by Type 1</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
         <sys_update_name>sys_report_884ca4cac3492a102c0b5312b40131ba</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-04-24 13:47:27</sys_updated_on>
+        <sys_updated_on>2025-04-29 18:02:45</sys_updated_on>
         <table>x_58872_needit_needit</table>
         <title>Active NeedIt Requests by Type 1</title>
         <title_horizontal_alignment>left</title_horizontal_alignment>
         <title_vertical_alignment>top</title_vertical_alignment>
         <to/>
-        <trend_field/>
+        <trend_field>activity_due</trend_field>
         <type>donut</type>
         <upper_limit/>
         <use_color_heatmap>false</use_color_heatmap>
